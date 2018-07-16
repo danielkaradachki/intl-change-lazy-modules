@@ -1,0 +1,20 @@
+
+<label>
+    Locale
+    <select [value]="localeId" (change)="onLocaleChange($event.target.value)">
+        <option value="en-US">en-US</option>
+        <option value="bg-BG">bg-BG</option>
+        <option value="de-DE">de-DE</option>
+    </select>
+</label>
+ <br />
+<kendo-numerictextbox [value]="number" format="c"></kendo-numerictextbox> <br />
+<kendo-datepicker [value]="date"></kendo-datepicker> <br />
+
+<button routerLink="/customers">Customers</button>
+<button routerLink="/orders">Orders</button>
+<button routerLink="">Home</button>
+
+
+<router-outlet></router-outlet>
+
